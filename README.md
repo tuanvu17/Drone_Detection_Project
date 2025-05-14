@@ -1,3 +1,4 @@
+KEY: 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
 Drone_Detection_Project/
 📁 Drone_Detection_Project/
 ├── 📄 .gitignore
@@ -103,6 +104,9 @@ Drone_Detection_Project/
     ├── ▶️ main_finetune_fusion.py
     ├── ▶️ main_train_audio.py
     └── 🚀 predict.py
+    └── inference/              # THƯ MỤC MỚI
+        ├── __init__.py         # File trống
+        └── predict_audio.py    # FILE MỚI
 
 
 
@@ -123,6 +127,6 @@ cd /home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project
 # python -m src.main_train_audio
 
 
+Predict file audio test:
+# python -m src.inference.predict_audio
 
-
-# Drone_Detection_Project
