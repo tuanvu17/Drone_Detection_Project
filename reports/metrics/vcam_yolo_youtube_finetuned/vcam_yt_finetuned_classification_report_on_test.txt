@@ -1,0 +1,13 @@
+Classification Report for VCam YouTube Fine-tuned Model on its Test Set (based on primary object)
+======================================================================
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+        BIRD       0.00      0.00      0.00         0
+       DRONE       1.00      0.97      0.99       232
+  HELICOPTER       0.98      1.00      0.99       256
+  BACKGROUND       0.00      0.00      0.00         0
+
+    accuracy                           0.99       488
+   macro avg       0.40      0.39      0.40       488
+weighted avg       0.99      0.99      0.99       488

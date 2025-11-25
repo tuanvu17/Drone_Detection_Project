@@ -1,0 +1,42 @@
+===== VCam_YOLO_FT_OOD =====
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.29      1.00      0.45        45
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.00      0.00      0.00        64
+  HELICOPTER       0.00      0.00      0.00        48
+
+    accuracy                           0.29       157
+   macro avg       0.06      0.20      0.09       157
+weighted avg       0.08      0.29      0.13       157
+
+
+===== Audio_LSTM_FT_OOD =====
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.29      1.00      0.45        45
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.00      0.00      0.00        64
+  HELICOPTER       0.00      0.00      0.00        48
+
+    accuracy                           0.29       157
+   macro avg       0.06      0.20      0.09       157
+weighted avg       0.08      0.29      0.13       157
+
+
+===== Early_Fusion_OOD =====
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.00      0.00      0.00        45
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.00      0.00      0.00        64
+  HELICOPTER       0.31      1.00      0.47        48
+
+    accuracy                           0.31       157
+   macro avg       0.06      0.20      0.09       157
+weighted avg       0.09      0.31      0.14       157
+
+

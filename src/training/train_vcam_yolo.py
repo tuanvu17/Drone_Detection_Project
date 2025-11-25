@@ -19,20 +19,20 @@ def run_vcam_yolo_training():
     else:
         print("Warning: ensure_output_directories function not found in config.")
 
-    if not os.path.exists(cfg.VCAM_DATA_YAML_PATH):
-        print(f"Lỗi: Không tìm thấy file data.yaml cho VCam tại: {cfg.VCAM_DATA_YAML_PATH}")
+    if not os.path.exists(cfg.VCAM_DATA_YAML_PATH_ORIGINAL):
+        print(f"Lỗi: Không tìm thấy file data.yaml cho VCam tại: {cfg.VCAM_DATA_YAML_PATH_ORIGINAL}")
         # ... (in hướng dẫn tạo data.yaml tương tự như IRCam) ...
         return
 
-    print(f"Loading pretrained YOLO model: {cfg.VCAM_YOLO_PRETRAINED_WEIGHTS}")
-    model = YOLO(cfg.VCAM_YOLO_PRETRAINED_WEIGHTS)
+    print(f"Loading pretrained YOLO model: {cfg.VCAM_YOLO_PRETRAINED_WEIGHTS_ORIGINAL}")
+    model = YOLO(cfg.VCAM_YOLO_PRETRAINED_WEIGHTS_ORIGINAL)
 
     print(f"Starting training for VCam model: {cfg.VCAM_YOLO_MODEL_NAME}")
     results = model.train(
-        data=cfg.VCAM_DATA_YAML_PATH,
-        epochs=cfg.VCAM_YOLO_EPOCHS,
+        data=cfg.VCAM_DATA_YAML_PATH_ORIGINAL,
+        epochs=cfg.VCAM_YOLO_EPOCHS_ORIGINAL,
         imgsz=cfg.VCAM_YOLO_IMG_SIZE,
-        batch=cfg.VCAM_YOLO_BATCH_SIZE,
+        batch=cfg.VCAM_YOLO_BATCH_SIZE_ORIGINAL,
         name=cfg.VCAM_YOLO_MODEL_NAME,
         project=os.path.join(cfg.PROJECT_ROOT, 'runs'),
         exist_ok=True,

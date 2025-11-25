@@ -58,7 +58,7 @@ def predict_on_vcam_video(video_path, model, output_video_path=None):
 
     cap.release()
     if writer: writer.release()
-    cv2.destroyAllWindows()
+   #  cv2.destroyAllWindows()
 
 
 if __name__ == "__main__":

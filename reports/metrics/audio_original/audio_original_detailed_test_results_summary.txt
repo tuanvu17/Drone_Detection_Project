@@ -1,0 +1,16 @@
+Test Set Performance Summary (Per-Segment Evaluation)
+============================================================
+Total Segments Evaluated: 150
+Overall Test Accuracy: 0.9000
+Overall Weighted F1-Score: 0.9003
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  BACKGROUND       1.00      0.94      0.97        50
+       DRONE       0.91      0.80      0.85        50
+  HELICOPTER       0.81      0.96      0.88        50
+
+    accuracy                           0.90       150
+   macro avg       0.91      0.90      0.90       150
+weighted avg       0.91      0.90      0.90       150

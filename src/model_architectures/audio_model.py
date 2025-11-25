@@ -16,6 +16,7 @@ def build_audio_model(input_shape, num_classes, learning_rate=0.001):
         Dropout(0.3, name='dropout_1'),
         Bidirectional(LSTM(64, return_sequences=False, name='bilstm_2'), name='bidirectional_2'),
         Dropout(0.3, name='dropout_2'),
+        # Dropout(0.5, name='dropout_2'), Có thể dùng 0.5 nếu thấy mô hình bị Overfitting
         Dense(64, activation='relu', name='dense_1'),
         Dropout(0.3, name='dropout_3'),
         Dense(num_classes, activation='softmax', name='output_softmax')

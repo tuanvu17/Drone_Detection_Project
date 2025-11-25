@@ -1,0 +1,12 @@
+Classification Report for Audio LSTM (YouTube Fine-tuned) on Test In-Domain (Evaluated on 922 segments):
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.00      0.01      0.00       240
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.00      0.00      0.00        95
+  HELICOPTER       0.01      0.00      0.00       587
+
+    accuracy                           0.00       922
+   macro avg       0.00      0.00      0.00       922
+weighted avg       0.01      0.00      0.00       922

@@ -1,0 +1,17 @@
+Report: Audio_LSTM_YT_FT_In_Domain
+CM: cm_audio_lstm_yt_ft_in_domain.png
+Acc: 0.9930
+F1W: 0.9930
+F1M: 0.9923
+
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       1.00      0.99      1.00       240
+        BIRD       0.00      0.00      0.00         0
+       DRONE       1.00      0.98      0.99        95
+  HELICOPTER       0.98      1.00      0.99       237
+
+    accuracy                           0.99       572
+   macro avg       0.60      0.59      0.60       572
+weighted avg       0.99      0.99      0.99       572

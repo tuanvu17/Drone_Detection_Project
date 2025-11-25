@@ -5,5 +5,7 @@ scikit-learn>=1.0.0   # Cho LabelEncoder, StandardScaler, train_test_split, metr
 matplotlib>=3.5.0
 seaborn>=0.11.0
 PyYAML>=5.0           # Nếu bạn quyết định dùng YAML cho config
-# moviepy            # Nếu bạn dùng để trích xuất audio từ video
-# opencv-python      # Nếu bạn dùng để xử lý video/ảnh
+moviepy            # Nếu bạn dùng để trích xuất audio từ video
+opencv-python      # Nếu bạn dùng để xử lý video/ảnh
+moviepy
+ultralytics

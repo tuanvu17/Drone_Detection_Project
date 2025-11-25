@@ -1,0 +1,5 @@
+Evaluation Metrics for v_cam_youtube_finetuned_model on its Test Set
+======================================================================
+mAP50-95: 0.5697
+mAP50: 0.9791
+mAP75: 0.5784

@@ -1,0 +1,17 @@
+Evaluation Report for: Early Fusion Model (In_Domain)
+Accuracy: 0.9967
+F1-Score (Weighted): 0.9967
+F1-Score (Macro): 0.9971
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.99      1.00      0.99       240
+        BIRD       0.00      0.00      0.00         0
+       DRONE       1.00      1.00      1.00        95
+  HELICOPTER       1.00      1.00      1.00       587
+
+    accuracy                           1.00       922
+   macro avg       0.60      0.60      0.60       922
+weighted avg       1.00      1.00      1.00       922

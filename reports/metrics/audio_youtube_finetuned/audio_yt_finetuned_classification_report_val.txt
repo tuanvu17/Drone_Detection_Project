@@ -1,0 +1,11 @@
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       1.00      0.98      0.99       168
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.99      1.00      0.99        66
+  HELICOPTER       0.99      1.00      1.00       330
+
+    accuracy                           0.99       564
+   macro avg       0.60      0.60      0.60       564
+weighted avg       0.99      0.99      0.99       564

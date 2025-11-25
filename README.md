@@ -130,3 +130,212 @@ cd /home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project
 Predict file audio test:
 # python -m src.inference.predict_audio
 
+
+train ir cam 
+# python -m src.main_train_ircam
+
+
+train v cam 
+# python -m src.main_train_vcam
+
+
+cd /home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project
+# python -m src.inference.predict_ircam_yolo_video
+
+# python -m src.inference.predict_vcam_yolo_video
+
+Predict file v_cam test:
+# python -m src.inference.predict_vcam_yolo_video
+
+
+Prepare data for Fusion:
+# python -m src.data_processing.prepare_fusion_finetune_data
+
+Kiểm tra số lượng cặp ghép: 
+# python -m ultils.analyze_fusion_paired_data
+
+
+Train Fusion 
+# python -m src.main_finetune_fusion
+
+Predict Fusion vcam audio
+# python -m src.inference.predict_fusion_video
+
+Chạy Script Chuẩn bị Dữ liệu Audio Segment:
+Đứng từ thư mục Drone_Detection_Project
+# python -m src.data_processing.prepare_audio_youtube_data
+
+Chạy Script Fine-tune Mô hình Audio:
+Đứng từ thư mục Drone_Detection_Project
+# python -m src.main_finetune_audio_youtube
+
+lây thông tin fine-tune Audio:
+# python -m ultils.analyze_audio_dataset
+
+Thực hiện chạy Test OOD
+Chuẩn bị dữ liệu cho OOD: 
+# python -m src.data_processing.prepare_ood_evaluation_data
+
+
+# python -m src.main_evaluate_comparison
+
+
+Thực hiện chạy Test In-Domain
+# python -m src.main_evaluate_comparison_in_domain
+
+
+bổ sung background cho vcam fine tune yolo
+# python -m src.ultils.add_background_frames_to_yolo
+# python -m ultils.analyze_yolo_dataset
+
+train mô hình vcam fine tune
+# python -m src.main_finetune_vcam_youtube
+
+
+
+
+thực hiện test trên miền Out - of - domain
+Chuẩn bị Dataset cho Testing
+# python -m src.data_processing.prepare_evaluation_test_data
+# python -m src.data_processing.prepare_ood_evaluation_data
+
+Thực hiện chạy test 
+# python -m src.main_evaluate_comparison
+
+
+Kiểm tra tên lớp để trích xuất Output cho Audio:
+# python -m ultils.check_audio_model_summary
+
+
+
+
+**Tóm tắt nhanh — các bước chạy chính trong Drone_Detection_Project**
+
+- **Chuẩn bị môi trường**: cài dependencies và đứng ở thư mục gốc dự án.
+  - Cài đặt:
+    ```bash
+    cd /home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project
+    pip install -r requirements.txt
+    ```
+  - Đảm bảo các `__init__.py` (README ghi rõ danh sách thư mục cần có file này).
+
+**1) Chuẩn bị dữ liệu**
+- **Audio segments**:
+  - Tạo/chuẩn hóa segment và MFCC:
+    ```bash
+    python -m src.data_processing.prepare_audio_youtube_data
+    ```
+- **VCam frames / YOLO dataset**:
+  - Các script tiền xử lý nằm trong `src/data_processing` (xem `image_utils.py`, notebooks).
+- **Dữ liệu cho Fusion (paired image+audio)**:
+  - Chuẩn bị cặp để fine-tune fusion:
+    ```bash
+    python -m src.data_processing.prepare_fusion_finetune_data
+    ```
+- Kiểm tra số cặp ghép:
+  ```bash
+  python -m ultils.analyze_fusion_paired_data
+  ```
+
+**2) Huấn luyện mô hình Audio**
+- Chạy pipeline huấn luyện audio:
+  ```bash
+  python -m src.main_train_audio
+  ```
+- Fine-tune audio (YouTube / dataset khác):
+  ```bash
+  python -m src.main_finetune_audio_youtube
+  ```
+- Kiểm tra thông tin dataset/fine-tune:
+  ```bash
+  python -m ultils.analyze_audio_dataset
+  ```
+
+**3) Huấn luyện VCam / IRCam**
+- Train VCam classifier:
+  ```bash
+  python -m src.main_train_vcam
+  ```
+- Train IR cam (nếu cần):
+  ```bash
+  python -m src.main_train_ircam
+  ```
+- Fine-tune VCam (YOLO/background augmentation flow):
+  - Thêm background frames:
+    ```bash
+    python -m src.ultils.add_background_frames_to_yolo
+    python -m ultils.analyze_yolo_dataset
+    ```
+  - Fine-tune YOLO/VCam:
+    ```bash
+    python -m src.main_finetune_vcam_youtube
+    ```
+
+**4) Huấn luyện / Fine-tune Fusion (image + audio)**
+- Chuẩn bị cặp (như mục ở trên), rồi huấn luyện fusion:
+  ```bash
+  python -m src.main_finetune_fusion
+  ```
+- Mô hình fusion lưu ở `models/fine_tuned_fusion_model/` theo README.
+
+**5) Inference / Predict**
+- Dự đoán audio (file test):
+  ```bash
+  python -m src.inference.predict_audio
+  ```
+- Dự đoán VCam video (YOLO):
+  ```bash
+  python -m src.inference.predict_vcam_yolo_video
+  ```
+- Dự đoán IRcam video:
+  ```bash
+  python -m src.inference.predict_ircam_yolo_video
+  ```
+- Dự đoán Fusion (video):
+  ```bash
+  python -m src.inference.predict_fusion_video
+  ```
+
+**6) Chuẩn bị và chạy đánh giá (Evaluation)**
+- Chuẩn bị dữ liệu OOD / test:
+  ```bash
+  python -m src.data_processing.prepare_ood_evaluation_data
+  python -m src.data_processing.prepare_evaluation_test_data
+  ```
+- Chạy so sánh / đánh giá:
+  - Out-of-domain comparison:
+    ```bash
+    python -m src.main_evaluate_comparison
+    ```
+  - In-domain comparison:
+    ```bash
+    python -m src.main_evaluate_comparison_in_domain
+    ```
+- Các script đánh giá audio cụ thể:
+  ```bash
+  python -m src.evaluation.evaluate_audio
+  ```
+- Kết quả/metrics xuất ra thư mục `reports/metrics/` theo README.
+
+**7) Kiểm tra/Phân tích bổ sung**
+- Kiểm tra lớp đầu ra audio:
+  ```bash
+  python -m ultils.check_audio_model_summary
+  ```
+- Các notebook phân tích / visual có trong `notebooks/` (ví dụ training history, conf_matrix).
+
+**Gợi ý đánh giá & metrics cần thu**
+- Object detection (VCam/IR): mAP@0.5, Precision, Recall, IoU, FPS/latency.
+- Audio classification: Accuracy, Precision/Recall, F1, Confusion Matrix.
+- Fusion: mAP/accuracy trên dataset ghép, robustness khi một modal nhiễu (ablation).
+- Lưu logs/weights: kiểm tra `models/` và `reports/metrics/` để so sánh phiên bản.
+
+**Lưu ý thực tiễn**
+- Luôn chạy từ thư mục gốc dự án (README khuyến cáo).
+- Kiểm tra `config/project_config.py` để biết đường dẫn file, hyperparams, checkpoint tên file.
+- Nếu cần chạy trên GPU, xác nhận CUDA/torch setup trước khi train.
+- Nên tạo script shell hoặc Makefile để tự động hóa chuỗi: data -> train audio -> train vcam -> prepare fusion -> train fusion -> eval.
+
+Muốn tôi:
+- Tạo một `run_all.sh` (hoặc `Makefile`) tự động hóa chuỗi chạy này không?
+- Hoặc tôi cài đặt một module Cross-Attention fusion vào fusion_model.py và tạo ví dụ forward/test?

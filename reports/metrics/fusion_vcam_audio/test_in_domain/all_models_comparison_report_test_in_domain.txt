@@ -1,0 +1,36 @@
+Báo cáo cho /home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project/reports/metrics/fusion_vcam_audio/test_in_domain/report_vcam_yolo_test_in_domain.txt không tìm thấy.
+
+======================================================================
+
+Classification Report for Audio LSTM (YouTube Fine-tuned) on Test In-Domain (Evaluated on 922 segments):
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.00      0.01      0.00       240
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.00      0.00      0.00        95
+  HELICOPTER       0.01      0.00      0.00       587
+
+    accuracy                           0.00       922
+   macro avg       0.00      0.00      0.00       922
+weighted avg       0.01      0.00      0.00       922
+
+
+======================================================================
+
+Classification Report for Fusion Model on Test In-Domain (using pre-extracted features):
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.99      1.00      0.99       240
+        BIRD       0.00      0.00      0.00         0
+       DRONE       1.00      1.00      1.00        95
+  HELICOPTER       1.00      1.00      1.00       587
+
+    accuracy                           1.00       922
+   macro avg       0.60      0.60      0.60       922
+weighted avg       1.00      1.00      1.00       922
+
+
+======================================================================
+

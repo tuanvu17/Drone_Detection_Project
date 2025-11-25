@@ -1,0 +1,14 @@
+Classification Report for Fine-tuned Audio Model on OOD Test Set (audio_youtube_ft_on_ood)
+Total segments evaluated: 211
+================================================================================
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       1.00      0.71      0.83        45
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.78      0.62      0.70        64
+  HELICOPTER       0.71      0.89      0.79       102
+
+    accuracy                           0.77       211
+   macro avg       0.50      0.45      0.46       211
+weighted avg       0.79      0.77      0.77       211

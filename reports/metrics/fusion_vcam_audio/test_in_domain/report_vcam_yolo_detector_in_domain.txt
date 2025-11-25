@@ -1,0 +1,17 @@
+Report: VCam_YOLO_Detector_In_Domain
+CM: cm_vcam_yolo_detector_in_domain.png
+Acc: 0.8881
+F1W: 0.8887
+F1M: 0.8851
+
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.79      1.00      0.88       240
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.99      0.78      0.87        95
+  HELICOPTER       1.00      0.82      0.90       237
+
+    accuracy                           0.89       572
+   macro avg       0.56      0.52      0.53       572
+weighted avg       0.91      0.89      0.89       572

@@ -1,0 +1,17 @@
+Evaluation Report for: Audio LSTM Model (In_Domain)
+Accuracy: 0.9924
+F1-Score (Weighted): 0.9924
+F1-Score (Macro): 0.9888
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       1.00      0.99      0.99       240
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.99      0.97      0.98        95
+  HELICOPTER       0.99      1.00      0.99       587
+
+    accuracy                           0.99       922
+   macro avg       0.60      0.59      0.59       922
+weighted avg       0.99      0.99      0.99       922

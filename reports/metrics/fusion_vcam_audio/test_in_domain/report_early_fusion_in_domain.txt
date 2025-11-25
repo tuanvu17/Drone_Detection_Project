@@ -1,0 +1,17 @@
+Report: Early_Fusion_In_Domain
+CM: cm_early_fusion_in_domain.png
+Acc: 1.0000
+F1W: 1.0000
+F1M: 1.0000
+
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       1.00      1.00      1.00       240
+        BIRD       0.00      0.00      0.00         0
+       DRONE       1.00      1.00      1.00        95
+  HELICOPTER       1.00      1.00      1.00       237
+
+    accuracy                           1.00       572
+   macro avg       0.60      0.60      0.60       572
+weighted avg       1.00      1.00      1.00       572

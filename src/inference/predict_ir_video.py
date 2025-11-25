@@ -183,3 +183,4 @@ if __name__ == "__main__":
                     print(f"    - {class_name}: {probs[i]:.4f}")
             else:
                 print(f"\nKhông thể xử lý video: {os.path.basename(video_path)}")
+                
