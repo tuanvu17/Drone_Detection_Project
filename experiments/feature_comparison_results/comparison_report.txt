@@ -1,0 +1,69 @@
+============================================================
+BÁO CÁO SO SÁNH CÁC ĐẶC TRƯNG AUDIO
+============================================================
+
+BẢNG SO SÁNH:
+------------------------------------------------------------
+MFCC            | Accuracy: 0.9944   | F1: 0.9944  
+ZCR             | Accuracy: 0.5222   | F1: 0.4849  
+RMSE            | Accuracy: 0.6389   | F1: 0.6061  
+------------------------------------------------------------
+
+ĐẶC TRƯNG TỐT NHẤT: MFCC
+  Accuracy: 0.9944
+  F1-Score: 0.9944
+
+
+CHI TIẾT TỪNG ĐẶC TRƯNG:
+============================================================
+
+MFCC:
+  Accuracy: 0.9944
+  F1-Score: 0.9944
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+  BACKGROUND       0.98      1.00      0.99        60
+       DRONE       1.00      0.98      0.99        60
+  HELICOPTER       1.00      1.00      1.00        60
+
+    accuracy                           0.99       180
+   macro avg       0.99      0.99      0.99       180
+weighted avg       0.99      0.99      0.99       180
+
+------------------------------------------------------------
+
+ZCR:
+  Accuracy: 0.5222
+  F1-Score: 0.4849
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+  BACKGROUND       0.69      0.15      0.25        60
+       DRONE       0.72      0.60      0.65        60
+  HELICOPTER       0.42      0.82      0.55        60
+
+    accuracy                           0.52       180
+   macro avg       0.61      0.52      0.48       180
+weighted avg       0.61      0.52      0.48       180
+
+------------------------------------------------------------
+
+RMSE:
+  Accuracy: 0.6389
+  F1-Score: 0.6061
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+  BACKGROUND       0.60      0.93      0.73        60
+       DRONE       0.57      0.27      0.36        60
+  HELICOPTER       0.73      0.72      0.72        60
+
+    accuracy                           0.64       180
+   macro avg       0.63      0.64      0.61       180
+weighted avg       0.63      0.64      0.61       180
+
+------------------------------------------------------------

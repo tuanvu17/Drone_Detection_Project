@@ -510,7 +510,7 @@ def run_fusion_finetuning_pipeline():
     # ... (Logic chia Train/Val và Test In-Domain như bạn đã cung cấp ở Câu hỏi 38) ...
     # ... (Sử dụng cfg.FUSION_TEST_IN_DOMAIN_SPLIT_RATIO và cfg.FUSION_VALIDATION_ON_REMAINING_RATIO) ...
     # ... (Lưu Test In-Domain features, labels và metadata) ...
-    # Đoạn code chia dữ liệu từ Câu hỏi 38 (đã được sửa đổi và kiểm tra):
+
     X_audio_train_val, X_vcam_train_val, y_train_val = X_audio_all, X_vcam_all, y_encoded_all
     indices_train_val_metadata = original_indices_all # Ban đầu, tất cả là train_val
     
@@ -618,9 +618,7 @@ def run_fusion_finetuning_pipeline():
     history_stage1 = fusion_model_stage1.fit( [X_audio_train, X_vcam_train], y_train, validation_data=validation_data_for_fit, epochs=cfg.FUSION_EPOCHS_STAGE1, batch_size=cfg.FUSION_BATCH_SIZE, callbacks=callbacks_stage1, verbose=1)
     plot_training_history(history_stage1, filename=cfg.FUSION_TRAINING_HISTORY_STAGE1_PLOT_PATH, title_prefix="Fusion Stage 1 - ")
 
-    # --- 6. Huấn luyện Giai đoạn 2: Mở băng Nhánh Audio (Tùy chọn) ---
-    # ... (Giữ nguyên logic huấn luyện Giai đoạn 2 từ Câu hỏi 38, đảm bảo các biến được tham chiếu đúng) ...
-    # ... (bao gồm tải lại model, mở băng nhánh audio, compile lại, và fit) ...
+    # --- 6. Huấn luyện Giai đoạn 2: Mở băng Nhánh Audio ---
     history_stage2 = None
     RUN_STAGE_2_FINETUNING = getattr(cfg, 'RUN_STAGE_2_FINETUNING', True)
     if RUN_STAGE_2_FINETUNING and cfg.FUSION_EPOCHS_STAGE2 > 0:

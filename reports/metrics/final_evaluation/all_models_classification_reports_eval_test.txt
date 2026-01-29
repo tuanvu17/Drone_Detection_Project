@@ -28,7 +28,7 @@ weighted avg       0.91      0.88      0.88       294
 
 ===== Early_Fusion_VCam_Audio =====
               precision    recall  f1-score   support
-
+ 
     AIRPLANE       0.00      0.00      0.00         0
   BACKGROUND       1.00      0.84      0.92        45
         BIRD       0.00      0.00      0.00         0

@@ -1,0 +1,27 @@
+================================================================================
+4.4.2. KẾT QUẢ TRÊN BỘ DỮ LIỆU YOUTUBE FINE-TUNE
+================================================================================
+
+Mô hình: best_audio_youtube_finetuned_model.keras
+Tập test: Test_Audio_YT (In-Domain Test Set)
+Tổng số mẫu đánh giá: 1208
+
+Accuracy: 0.9826
+F1-Score (Weighted): 0.9826
+F1-Score (Macro): 0.9796
+
+Classification Report:
+--------------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.98      0.99      0.98       360
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.97      0.97      0.97       142
+  HELICOPTER       0.99      0.98      0.99       706
+
+    accuracy                           0.98      1208
+   macro avg       0.59      0.59      0.59      1208
+weighted avg       0.98      0.98      0.98      1208
+
+================================================================================

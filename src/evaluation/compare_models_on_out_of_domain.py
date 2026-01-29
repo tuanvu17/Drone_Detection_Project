@@ -215,7 +215,7 @@ def run_model_comparison_on_evaluation_set(device_for_pytorch_models='cpu'): # T
     print(f"\nBáo cáo phân loại đã lưu vào: {report_file_path}")
 
     fig, axes = plt.subplots(1, 3, figsize=(24, 7))
-    fig.suptitle('So sánh Ma trận Nhầm lẫn trên Tập Test Đánh giá Cuối cùng', fontsize=16)
+    fig.suptitle('Confusion matrices on OOD dataset: (a) VCam, (b) Audio, (c) Early Fusion', fontsize=16)
     idx = 0
     for model_name, preds_encoded in models_to_evaluate.items():
         if len(preds_encoded) != len(ground_truth_encoded): continue

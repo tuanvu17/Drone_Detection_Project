@@ -1,5 +1,5 @@
 VCam YouTube Fine-tuned Model - Detection Metrics on its Test Set
 ============================================================
-mAP50-95: 0.5437
-mAP50: 0.9614
+mAP50-95: 0.5436
+mAP50: 0.9615
 mAP75: 0.5443
