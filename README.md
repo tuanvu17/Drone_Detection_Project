@@ -300,7 +300,7 @@ Kiểm tra tên lớp để trích xuất Output cho Audio:
 - Chuẩn bị dữ liệu OOD / test:
   ```bash
   python -m src.data_processing.prepare_ood_evaluation_data
-  python -m src.data_processing.prepare_evaluation_test_data
+  # python -m src.data_processing.prepare_evaluation_test_data
   ```
 - Chạy so sánh / đánh giá:
   - Out-of-domain comparison:

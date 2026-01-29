@@ -2,41 +2,41 @@
               precision    recall  f1-score   support
 
     AIRPLANE       0.00      0.00      0.00         0
-  BACKGROUND       0.48      0.96      0.64        45
+  BACKGROUND       0.24      0.96      0.39        45
         BIRD       0.00      0.00      0.00         0
-       DRONE       0.97      0.52      0.68       147
-  HELICOPTER       0.80      0.99      0.88       102
+       DRONE       0.93      0.12      0.21       214
+  HELICOPTER       0.65      0.99      0.78       102
 
-    accuracy                           0.75       294
-   macro avg       0.45      0.49      0.44       294
-weighted avg       0.84      0.75      0.74       294
+    accuracy                           0.47       361
+   macro avg       0.36      0.41      0.28       361
+weighted avg       0.76      0.47      0.40       361
 
 
 ===== Audio_LSTM_YT_FT =====
               precision    recall  f1-score   support
 
     AIRPLANE       0.00      0.00      0.00         0
-  BACKGROUND       1.00      0.69      0.82        45
+  BACKGROUND       0.37      0.69      0.48        45
         BIRD       0.00      0.00      0.00         0
-       DRONE       0.98      0.86      0.92       147
-  HELICOPTER       0.75      0.99      0.86       102
+       DRONE       0.98      0.43      0.60       214
+  HELICOPTER       0.55      0.99      0.71       102
 
-    accuracy                           0.88       294
-   macro avg       0.55      0.51      0.52       294
-weighted avg       0.91      0.88      0.88       294
+    accuracy                           0.62       361
+   macro avg       0.38      0.42      0.36       361
+weighted avg       0.78      0.62      0.62       361
 
 
 ===== Early_Fusion_VCam_Audio =====
               precision    recall  f1-score   support
- 
-    AIRPLANE       0.00      0.00      0.00         0
-  BACKGROUND       1.00      0.84      0.92        45
-        BIRD       0.00      0.00      0.00         0
-       DRONE       0.99      1.00      1.00       147
-  HELICOPTER       0.94      1.00      0.97       102
 
-    accuracy                           0.98       294
-   macro avg       0.59      0.57      0.58       294
-weighted avg       0.98      0.98      0.98       294
+    AIRPLANE       0.00      0.00      0.00         0
+  BACKGROUND       0.79      0.82      0.80        45
+        BIRD       0.00      0.00      0.00         0
+       DRONE       0.99      0.95      0.97       214
+  HELICOPTER       0.95      1.00      0.98       102
+
+    accuracy                           0.95       361
+   macro avg       0.55      0.56      0.55       361
+weighted avg       0.95      0.95      0.95       361
 
 
