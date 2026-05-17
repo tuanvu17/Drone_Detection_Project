@@ -1,9 +1,9 @@
               precision    recall  f1-score   support
 
     AIRPLANE       0.00      0.00      0.00         0
-  BACKGROUND       1.00      0.99      1.00       192
+  BACKGROUND       1.00      0.99      0.99       192
         BIRD       0.00      0.00      0.00         0
-       DRONE       1.00      1.00      1.00       122
+       DRONE       0.99      1.00      1.00       122
   HELICOPTER       0.99      1.00      1.00       190
 
     accuracy                           1.00       504

@@ -1,0 +1,5 @@
+fusion_dir,label,fusion_params,fusion_size_bytes,fusion_mean_s,fusion_throughput_fps,fusion_e2e_mean_s,fusion_e2e_throughput_fps,yolo_params,yolo_size_bytes,yolo_mean_s,bi_lstm_params,bi_lstm_size_bytes,bi_lstm_mean_s
+/home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project/models/fine_tuned_fusion_model,fine_tuned_fusion_model,262853,3255508,0.0,0.0,,,,,,,,
+/home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project/models/fine_tuned_fusion_model -- attendtion,fine_tuned_fusion_model -- attendtion,283397,3511452,0.0,0.0,,,,,,,,
+/home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project/models/fine_tuned_fusion_model -- hybrid,fine_tuned_fusion_model -- hybrid,615877,7510480,0.0,0.0,,,,,,,,
+/home/tuanvu17/mydocuments/ths/luanvan/Drone_Detection_Project/models/fine_tuned_fusion_model -- gated,fine_tuned_fusion_model -- gated,377797,4638878,0.0,0.0,,,,,,,,

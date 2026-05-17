@@ -345,10 +345,10 @@ def build_early_fusion_model(audio_input_shape,
                              fusion_learning_rate,
                              audio_branch_trainable=False,
                              audio_feature_layer_name=None,
-                            #  fusion_method=FusionMethod.CONCATENATE,
+                             fusion_method=FusionMethod.CONCATENATE,
                             #  fusion_method=FusionMethod.GATED,
                             #  fusion_method=FusionMethod.ATTENTION,
-                             fusion_method=FusionMethod.HYBRID,
+                            #  fusion_method=FusionMethod.HYBRID,
                              fusion_output_dim=256):
     """
     Xây dựng mô hình Early Fusion kết hợp đặc trưng âm thanh và VCam.

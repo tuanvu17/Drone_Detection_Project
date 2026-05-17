@@ -26,17 +26,17 @@ weighted avg       0.74      0.45      0.47       588
 weighted avg       0.82      0.74      0.73       588
 
 
-=====HYBRID Early_Fusion_VCam_Audio =====
+=====CONCATE Early_Fusion_VCam_Audio =====
               precision    recall  f1-score   support
 
     AIRPLANE       0.00      0.00      0.00         0
-  BACKGROUND       0.51      0.89      0.65        45
+  BACKGROUND       0.50      0.84      0.63        45
         BIRD       0.00      0.00      0.00         0
-       DRONE       0.94      0.99      0.97       214
-  HELICOPTER       0.99      0.85      0.92       329
+       DRONE       0.89      0.96      0.92       214
+  HELICOPTER       0.98      0.84      0.91       329
 
-    accuracy                           0.91       588
-   macro avg       0.49      0.55      0.51       588
-weighted avg       0.93      0.91      0.91       588
+    accuracy                           0.88       588
+   macro avg       0.47      0.53      0.49       588
+weighted avg       0.91      0.88      0.89       588
 
 
